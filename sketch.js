@@ -1,16 +1,7 @@
 let film;
 
-//function preload() {
- // img = loadImage('grid.png');
-//}
-
 function setup() {
-  //createCanvas(744, 720);
-  //createCanvas(700,500);
   createCanvas(windowWidth, windowHeight);
-  //image(img, 0, 0);
-  // specify multiple formats for different browsers
-  //film = createVideo('assets/hands.webm');
   film = createVideo('sea3.mp4');
   film.size(windowWidth, windowHeight);
   film.loop();
@@ -20,7 +11,6 @@ function setup() {
 }
 
 function draw() {
-  //background(img);
   background('white');
   film.loadPixels();
   const stepSize = round(constrain(mouseX / 8, 6, 32));
